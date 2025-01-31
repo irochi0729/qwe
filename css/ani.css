@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+*{margin: 0;padding: 0;}
+a{color: #333;text-decoration: none;}
+li{text-decoration: none;color: #333;list-style: none;}
+table{border-collapse: collapse;}
+caption{font-size: 0;color: transparent;}
+
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 400;
+    src: url('//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot');
+    src: url('//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') format('embedded-opentype'), url('//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff'), url('//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') format('truetype');
+   }
+   
+   @font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 700;
+    src: url('//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot');
+    src: url('//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix') format('embedded-opentype'), url('//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff') format('woff'), url('//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf') format('truetype')
+   }
+   
+   @font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 300;
+    src: url('//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot');
+    src: url('//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix') format('embedded-opentype'), url('//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff') format('woff'), url('//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf') format('truetype');
+   }
+   
+   .nanumbarungothic * {
+    font-family: 'NanumBarunGothic', sans-serif;
+   }
+
+   @font-face {
+    font-family: 'HeirofLightBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/HeirofLightBold.woff');
+    font-weight: normal;
+    font-style: normal;
+   }
+   @font-face {
+    font-family: 'HeirofLightRegular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/HeirofLightRegular.woff');
+    font-weight: normal;
+    font-style: normal;
+   }
+
+html, body{height: 100%;}
+#wrap{background:url(../img/peakpx.jpg);width: 100%;height: 100%;background-size: cover;position: relative;}
+
+header{width: 80%;height: 80px;border-radius: 50px;background: rgb(50, 62, 84, 0.3);position: absolute;left: 50%;top: 50px;transform: translateX(-50%);display: flex;justify-content: space-between;align-items: center;padding: 0 100px;backdrop-filter: blur(5px);opacity: 0.6;transition: 0.2s; font-family: 'NanumBarunGothic', sans-serif;z-index: 1;} 
+header:hover{opacity: 1;z-index: 3;}
+header h1{width: 200px;}
+header h1 a{color: #F8FCFD;}
+header audio{width: 100px;transition: 1s;} 
+header:hover audio {width: 400px;} 
+header nav{width: 800px;} 
+header nav .gnb{display: flex;}
+header nav .gnb li{width: 20%;flex-grow: 1;font-size: 18px;text-align: center;border-right: 1px solid #ffffff;}
+header nav .gnb li:last-child{border: 0;}
+header nav .gnb li a{display: block;color: #ddd;}
+.textbox{position: absolute;font-size: 75px;top: 170px;left: 340px;font-family: 'HeirofLightBold', sans-serif;line-height: 95px;font-weight: bold;z-index: 2;}
+.textbox ul{display: flex;justify-content: end;}
+.textbox ul li{color: #F8FCFD;margin: 0 1px;animation:text 3s forwards;opacity: 0;}
+.textbox li.sp{margin-right: 15px;}
+@keyframes text{
+    0%{opacity: 0;}
+    100%{opacity: 1;} 
+}  
+.textbox .t1 li:nth-child(1){animation-delay: 1.5s;}
+.textbox .t1 li:nth-child(2){animation-delay: 1.8s}
+.textbox .t1 li:nth-child(3){animation-delay: 2.0s}
+.textbox .t1 li:nth-child(4){animation-delay: 2.2s}
+.textbox .t1 li:nth-child(5){animation-delay: 2.4s}
+.textbox .t2 li:nth-child(1){animation-delay: 2.8s}
+.textbox .t2 li:nth-child(2){animation-delay: 3.0s}
+.textbox .t2 li:nth-child(3){animation-delay: 3.2s}
+.textbox .t2 li:nth-child(4){animation-delay: 3.4s}
+.textbox .t2 li:nth-child(5){animation-delay: 3.6s}
+.textbox .t2 li:nth-child(6){animation-delay: 3.8s}
+.textbox .t2 li:nth-child(7){animation-delay: 4.0s}
+.textbox .t2 li:nth-child(8){animation-delay: 4.2s}
+
+.snow_box{position: absolute;width: 100%;height: 100%;background: url(../img/snow.png);animation: snow1 120s infinite linear;top: 0;}
+@keyframes snow1{
+    0%{background-position: 0 0;}
+    100%{background-position: 0 4000px;}
+}
